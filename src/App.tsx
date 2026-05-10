@@ -1,6 +1,9 @@
+import IntroSection from "./components/IntroSection";
 
 function App() {
-  return <></>;
+  return <>
+    <IntroSection />
+  </>;
 }
 
 export default App;
