@@ -147,3 +147,26 @@ body {
     font-size: 5.5rem;
   }
 }
+
+/* LAYOUT */
+.wrapper {
+  width: min(calc(100% - 2rem), 1110px);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap, 1rem);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: var(--flex-gap, 1rem);
+}
+
+@media (min-width: 37.5em) {
+  .wrapper {
+    width: min(calc(100% - 3.75rem), 1110px);
+  }
+}
