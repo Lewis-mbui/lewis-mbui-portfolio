@@ -42,7 +42,7 @@ const projects: Project[] = [
     title: "Ecommerce Website",
     skills: ["HTML", "CSS", "Javascript"],
     projectUrl: "https://amazon-clone-project-lovat.vercel.app/",
-    codeUrl: "https://github.com/Lewis-mbui/weather-app-vanilla-js",
+    codeUrl: "https://github.com/Lewis-mbui/amazon-clone-project",
   },
   {
     id: 4,
