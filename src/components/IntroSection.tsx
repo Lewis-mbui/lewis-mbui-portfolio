@@ -3,29 +3,29 @@ import PrimaryNav from "./PrimaryNav"
 const IntroSection = () => {
   return (
     <section className="intro">
-      <div className="intro__wrapper wrapper">
+      <div className="intro__wrapper | wrapper grid">
         <PrimaryNav />
-        <picture>
+        <picture className="profile-container">
           <source
             media="(min-width: 900px)"
-            srcSet="/image-profile-desktop.webp"
+            srcSet="/lewis-desktop.webp"
           />
           <source
-            media="(min-width: 600px)"
-            srcSet="/image-profile-tablet.webp"
+            media="(min-width: 720px)"
+            srcSet="/lewis-tablet.webp"
           />
           <img
-            src="/image-profile-mobile.webp"
+            src="/lewis-mobile.webp"
             alt="Profile photo"
           />
         </picture>
 
-        <div className="intro__content">
-          <h1 className="heading-xl">
-            Nice to meet you! <span className="decorate">I'm Adam Keyes</span>.
+        <div className="intro__content | grid">
+          <h1 className="intro__header | heading-xl">
+            Nice to <br className="intro__break" />meet you! I'm <span className="decorate">Lewis Mbui</span>.
           </h1>
           <p>
-            Based in the UK, I'm a front-end developer passionate about building
+            Based in Kenya, I'm a front-end developer passionate about building
             accessible web apps that users love.
           </p>
           <a href="mailto: lewmugo14479@gmail.com" className="link">Contact me</a>
