@@ -5,10 +5,10 @@ const InquiryForm = () => {
     e.preventDefault()
   }
 
-  return <form noValidate action="" className="contact__form | grid" onSubmit={handleSubmit}>
-    <FormField id='name' type='text' placeholder="Name" />
-    <FormField id='email' type='email' placeholder="Email" />
-    <FormField id='message' type='textarea' placeholder="Message" />
+  return <form noValidate action="https://formspree.io/f/mrejjelq" method="POST" className="contact__form | grid" onSubmit={handleSubmit}>
+    <FormField id='name' name='Name' type='text' placeholder="Name" />
+    <FormField id='email' name='Email' type='email' placeholder="Email" />
+    <FormField id='message' name='Message' type='textarea' placeholder="Message" />
     <button className="link">Send message</button>
   </form>
 };

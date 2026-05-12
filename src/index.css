@@ -526,7 +526,6 @@ textarea {
 
 .project__actions {
   --flex-gap: 2rem;
-  /* outline: 2px solid red; */
 }
 
 @media (min-width: 37.5em) {
@@ -589,7 +588,6 @@ textarea {
 .footer__contact {
   max-width: 450px;
   margin: 0 auto;
-  /* outline: 2px solid blue; */
 }
 
 .footer__message {
@@ -619,7 +617,6 @@ textarea {
 }
 
 .footer .primary-nav {
-  /* background-color: darkred; */
   padding-top: 2.5rem;
   border-top: 1px solid var(--clr-neutral-100);
   margin-top: 5.625rem;

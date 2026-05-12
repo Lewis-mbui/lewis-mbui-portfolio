@@ -3,13 +3,14 @@ import useInquiryContext from "../hooks/useInquiryContext";
 
 interface Props {
   id: InquiryField;
+  name: string;
   type: 'email' | 'text' | 'textarea';
   placeholder: string;
 }
 
-const FormField = ({ id, type, placeholder }: Props) => {
-  const { inquiry, dispatch } = useInquiryContext();
-  const fieldVal = inquiry[id];
+const FormField = ({ id, type, placeholder, name }: Props) => {
+  const { state: { values }, dispatch } = useInquiryContext();
+  const fieldVal = values[id];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement, HTMLTextAreaElement>) => {
     const newVal = e.target.value;
@@ -38,6 +39,7 @@ const FormField = ({ id, type, placeholder }: Props) => {
             placeholder={placeholder}
             type={type}
             id={id}
+            name={name}
             onChange={handleChange}
           />
         )}

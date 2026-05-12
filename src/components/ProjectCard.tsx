@@ -26,8 +26,8 @@ const ProjectCard = ({ image, title, skills, projectUrl, codeUrl }: Props) => {
         </div>
       </div>
       <div className="project__actions | flex">
-        <a href={projectUrl} className="link">View Projet</a>
-        <a href={codeUrl} className="link">View Code</a>
+        <a href={projectUrl} className="link" target="_blank">View Projet</a>
+        <a href={codeUrl} className="link" target="_blank">View Code</a>
       </div>
     </li>
   )
