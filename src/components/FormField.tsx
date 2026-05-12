@@ -44,7 +44,11 @@ const FormField = ({ id, type, placeholder, name }: Props) => {
             name={name}
             value={fieldVal}
             onChange={handleMessageChange}
-            onBlur={() => dispatch({ type: 'SET_TOUCHED', field: id })}
+            onBlur={() => {
+              const error = validateInquiry(values);
+              dispatch({ type: 'SET_ERROR', error })
+              dispatch({ type: 'SET_TOUCHED', field: id })
+            }}
           />
         ) : (
           <input
@@ -54,7 +58,11 @@ const FormField = ({ id, type, placeholder, name }: Props) => {
             id={id}
             name={name}
             onChange={handleChange}
-            onBlur={() => dispatch({ type: 'SET_TOUCHED', field: id })}
+            onBlur={() => {
+              const error = validateInquiry(values);
+              dispatch({ type: 'SET_ERROR', error });
+              dispatch({ type: 'SET_TOUCHED', field: id })
+            }}
           />
         )}
       </div>
