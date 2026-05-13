@@ -73,7 +73,7 @@ const projects: Project[] = [
       large: "/thumbnail-game-hub-large.webp",
     },
     title: "Game Hub",
-    skills: ["TypeScript", "React"],
+    skills: ["TypeScript", "React", "Chakra UI"],
     projectUrl: "https://game-hub-khaki-chi-47.vercel.app/",
     codeUrl: "https://github.com/Lewis-mbui/game-hub",
   },

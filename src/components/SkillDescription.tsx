@@ -1,13 +1,13 @@
 interface Props {
   title: string;
-  period: number;
+  period: string;
 }
 
 const SkillDescription = ({ title, period }: Props) => {
   return (
     <li className="skill">
       <h2 className="heading-large">{title}</h2>
-      <p>{period} {period <= 1 ? 'Year' : 'Years'} of Experience</p>
+      <p>{period} of Experience</p>
     </li>
   )
 }
